@@ -1,4 +1,4 @@
-import { Experience, Contact, Hero, Project, Skill } from "@/components";
+import { Experience, Contact, Hero, Project, Skill, About } from "@/components";
 
 export default function Home() {
 
@@ -9,11 +9,12 @@ export default function Home() {
           <Hero />
         </div>
         <div className="bg-white relative z-10">
+          <About className="block lg:hidden px-6 pt-20" />
           <Skill />
           <Experience />
         </div>
       </div>
-      <div className="relative w-full">
+      <div className="relative w-full ">
         <div className="bg-white relative z-10">
           <Project />
         </div>

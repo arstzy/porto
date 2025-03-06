@@ -1,7 +1,7 @@
 export default function Experience() {
   return (
-    <div className="mt-16 mx-auto px-80 pb-64">
-      <h2 className="text-6xl font-bold mb-8">Experience</h2>
+    <div className="lg:mt-16 mt-10 mx-auto lg:px-80 px-6 lg:pb-64 pb-20">
+      <h2 className="lg:text-5xl text-4xl font-bold mb-8">Experience</h2>
       <div className="space-y-8">
         <div className="group">
           <div className="flex justify-between items-center">

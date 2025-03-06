@@ -1,14 +1,18 @@
+import clsx from "clsx";
 import { Badge } from "./ui";
 
-export default function About() {
+export default function About({ className }: { className?: string }) {
   return (
-    <div className="mt-8">
-      <div className="inline-block mb-6">
-        <Badge variant="outline" className="px-4 py-1.5 text-lg font-medium border-2">
+    <div className={clsx("mt-8", className)}>
+      <div className=" lg:mb-6 mb-4">
+        <Badge variant="outline" className="px-3 hidden lg:block py-1 rounded-lg text-lg font-medium border">
           ABOUT
         </Badge>
+        <h2 className="text-4xl font-bold text-center block lg:hidden">
+          About
+        </h2>
       </div>
-      <div className="space-y-6 text-black text-xl">
+      <div className="space-y-6 text-black text-base">
         <p>
           I am Alex Morgan, a passionate Web Designer & Developer residing in the dynamic city of Berlin, Germany.
           My expertise lies at the intersection of visual design and technical implementation.
